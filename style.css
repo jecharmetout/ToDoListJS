@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.red {
+  background: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+body {
+  height: 100vh;
+  background: #066acd;
+}
+
+.wrap {
+  padding: 65px 30px 40px 30px;
+  width: 50%;
+  border: 2px solid black;
+  border-radius: 23px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-weight: 900;
+  font-size: 25px;
+  color: #066acd;
+  margin-bottom: 30px;
+}
+/* NOTE-HEAD */
+
+.note-head {
+  position: relative;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.note-head input {
+  width: 54%;
+  height: 45px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+.note-head input:hover {
+  box-shadow: 0px 0px 12px 6px #cccfd3ad;
+  /* outline: none; */
+}
+.note-head input:focus {
+  box-shadow: 0px 0px 9px 1px #066acd;
+  outline: none;
+  border-color: #0e6bd7a3;
+  border-radius: 5px;
+}
+.note-head button {
+  width: 20%;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  transition-duration: 0.1s;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.add {
+  background-color: #009700;
+}
+.add:hover {
+  box-shadow: 0px 0px 6px 2px #009700;
+}
+.deleteAll {
+  background-color: #dd041a;
+}
+.deleteAll:hover {
+  box-shadow: 0px 0px 6px 2px #dd041a;
+}
+
+/* NOTE-BODY */
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 95px;
+}
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 5px 0;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid #cccccc;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+}
+.done-list {
+  background: #23a116;
+  border: 3px solid #a7f08a;
+}
+ul li div.done {
+  width: 10%;
+  min-height: 51px;
+  border: 3px solid #cccccc;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.1s;
+  margin: 10px 5px;
+}
+
+div .done:hover {
+  box-shadow: 0px 0px 6px 2px #009700;
+  border: 3px solid transparent;
+}
+/* ul li div.done-checked {
+  border: 2px solid #1b9923;
+} */
+div .done-checked::before {
+  content: "\f00c";
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 35px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  color: #1b9923;
+}
+.description {
+  width: 65%;
+  min-height: 85px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: 3px solid #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 5px;
+}
+.description p {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 5px;
+  width: 18%;
+}
+.delete {
+  min-height: 51px;
+  width: 56%;
+  border: 3px solid #cccccc;
+  background: white;
+  padding: 5px;
+  margin-bottom: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.1s;
+  color: #ff0000;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+.delete:hover {
+  box-shadow: 0px 0px 6px 2px #ff0000;
+  border: 3px solid transparent;
+}
+.current-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #cccccc;
+  border-radius: 5px;
+  text-align: center;
+  background: #ffffff;
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+.current-date:hover {
+  box-shadow: 0px 0px 6px 2px #619ce9;
+  border: 3px solid transparent;
+}
